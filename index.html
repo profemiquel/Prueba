@@ -1,0 +1,79 @@
+﻿
+
+<!DOCTYPE html>
+
+
+<html lang="es">  
+
+  <head>    
+    <title>Registre d'hores de Fàtima</title>    
+     <meta charset=utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">    
+    <link href="http://dominio.com/hoja-de-estilos.css" rel="stylesheet" type="text/css"/>
+    
+          <style type="text/css">
+               html, body, div, iframe { margin:0; padding:0; height:100%; }
+               iframe { display:block; width:100%; border:none; }
+               
+            #b1{
+            white-space: normal;
+                  }               
+               
+                   </style>
+                   
+          <script type="text/javascript">
+
+               if (navigator.geolocation) {
+                              navigator.geolocation.getCurrentPosition(mostrarUbicacion);
+               } else {alert("¡Error! Este navegador no soporta la Geolocalización.");}
+               
+      function mostrarUbicacion(position) {
+               var times = position.timestamp;
+               var latitud = position.coords.latitude;
+               var longitud = position.coords.longitude;
+
+              var div = document.getElementById("acces");
+              div.innerHTML = "<form name = 'formu' method='post' action='http://fatimasueca.es/apps/geo/paso.php'   ><input style='visibility:hidden' type='text' name='times' value='"+times+"'><input style='visibility:hidden' type='text' name='latitud' value='"+latitud+"'><input style='visibility:hidden' type='text' name='longitud' value="+longitud+"><br><button id='b1' type='submit'><strong><p>BENVINGUTS A L'APP DE REGISTRE D'HORES</p></strong> </button</form>";}
+
+      function refrescarUbicacion() {
+               navigator.geolocation.watchPosition(mostrarUbicacion);}
+                                 
+
+          </script>                        
+
+
+ 
+  </head>
+
+ 
+  <body>   
+
+
+
+     
+
+<table align="left" border=0 width=22% style="background-color:white">
+
+<tr>
+	<td align="center"><img src="imatges/logo_fatima_3d_107x102.png"/></td>
+	<td align="center"><img src="imatges/cd_fsvm_107x102.png"/></td>
+  </tr> 
+
+</table>
+<br clear="all" />     <!-- esta instrucció posa una taula baix de l'altra -->
+
+<table align="left" border=0 width=22% style="background-color:white"> 
+<div id="acces"></div></tr></td> 
+
+</table>
+
+
+
+
+       
+
+   
+  </body>  
+</html>
