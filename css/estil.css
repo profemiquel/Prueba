@@ -1,0 +1,70 @@
+               html, body, div, iframe { margin:0; padding:0; height:100%; }
+               iframe { display:block; width:100%; border:none; }
+               
+            #b1{
+            white-space: normal;
+                  }                          
+                  
+    body {
+
+background-image:url(../imatges/cielo.jpg);
+background-repeat: no-repeat;
+background-size: cover ;
+background-position: center center;
+background-attachment: fixed;
+                        }
+                        
+                        
+.boton1{
+  width:100px;
+  height:100px;
+  background-color:#03800b;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:20px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+  text-align: center;
+  line-height:50px;
+  text-transform: uppercase;
+  float:left;
+}
+.boton1:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+.boton1 a{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
+}
+
+.boton2{
+  width:100px;
+  height:100px;
+  background-color:#d93434;
+  margin: 5px;
+  padding:10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size:20px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+  text-align: center;  
+  line-height:50px;
+  text-transform: uppercase;
+  float:left;
+}
+.boton2:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+.boton2 a{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
+}
