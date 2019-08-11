@@ -1,0 +1,29 @@
+
+
+.boton4{
+  width:120px;
+  height:20px;
+  background-color: #154360;
+  margin: 10px;
+  padding:15px;
+  -webkit-border-square: 50px;
+  -moz-border-square: 50px;
+  border-square: 50px;
+  font-size:15px;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;  
+  text-align: center;
+  line-height:20px;
+  text-transform: uppercase;
+  float: center;
+}
+.boton4:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+.boton4 a{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
+}
+
